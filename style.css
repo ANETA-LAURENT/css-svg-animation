@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.animation {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+audio {
+  position: absolute;
+  width: 50px;
+  margin: 260px 140px 0 0px;
+  border-radius: 70%;
+  border: none;
+  background-color: rgb(0, 0, 0);
+}
+
+/* updown 7s linear infinite,  */
+#para {
+  animation: updown 7s linear infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+#para:hover {
+  /* animation-play-state: paused; */
+  animation: trans 5s linear infinite;
+}
+
+@keyframes updown {
+  0% {
+    transform: translate(0, 2px);
+    opacity: 1;
+  }
+  30% {
+    transform: translate(0, -20px);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translate(0, -50px);
+    opacity: 0.7;
+  }
+
+  80% {
+    transform: translate(0px, -100px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(0px, -150px);
+    opacity: 0;
+  }
+}
+
+@keyframes trans {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateY(190deg);
+  }
+
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+#avatar {
+  opacity: 0.1;
+  background-color: rgb(252, 252, 11);
+  animation: light 2s linear infinite;
+}
+
+@keyframes light {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#Vector,
+#Vector_9,
+#Vector_8,
+#Vector_7,
+#Vector_5,
+#Vector_4,
+#Vector_3,
+#Vector_2 {
+  animation: swing 4s linear infinite;
+  transform-origin: 50% 100% 0;
+  transform-box: view-box;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+#plant {
+  transform-origin: bottom;
+
+  transform-box: fill-box;
+  animation: 6s skew infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes skew {
+  0% {
+    transform: skew(20deg);
+  }
+  100% {
+    transform: skew(0deg);
+  }
+}
+
+#Vector_11,
+#Vector_12,
+#Vector_13,
+#Vector_14,
+#Vector_15 {
+  animation: jump 3s ease-in-out 15s infinite;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+#Vector_25,
+#Vector_27 {
+  transform-origin: top;
+
+  transform-box: fill-box;
+  animation: 2s tape infinite;
+  animation-direction: alternate;
+}
+
+@keyframes tape {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-4deg);
+  }
+
+  80% {
+    transform: rotate(4deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#thought1,
+#thought2,
+#thought3,
+#thought4 {
+  opacity: 0;
+}
+
+#thought1 {
+  animation: 2s show ease-in-out 5s;
+  animation-fill-mode: forwards;
+}
+
+#thought4 {
+  animation: 5s show ease-in-out 7s;
+  animation-fill-mode: forwards;
+}
+#thought3 {
+  animation: 8s show ease-in-out 10s;
+  animation-fill-mode: forwards;
+}
+#thought2 {
+  animation: 12s show ease-in-out 12s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* #head {
+  animation: jump 0.4s ease-in-out 0s infinite alternate-reverse;
+} */
