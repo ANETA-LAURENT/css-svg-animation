@@ -1,4 +1,4 @@
 URL:  <a href="https://aneta-laurent.yj.fr/fish.html" class="text-center" target="_blank"
-                >Square breathing app</a>
+                >Svg Animation</a>
 
-<img src="/img/dev-animation.png" alt="svg anim"> 
+<img src="/dev-animation.png" alt="svg anim"> 
